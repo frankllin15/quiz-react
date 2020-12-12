@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import Main from '../Main/Main'
 import { Card, Button } from 'react-bootstrap'
+import img from '../../assets/logo_size_invert.jpg'
 
 const baseUrl = 'http://localhost:3001/quiz'
 const initialState = {
@@ -22,16 +23,16 @@ export default class Cards extends Component {
      renderCard() {
          return this.state.list.map((quiz, id) => {
             return (
-                <div className="mr-5" key={id}>
+                <div className="mr-4 mt-4" key={id}>
 
-                <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-            <Card.Title>{quiz.title}</Card.Title>
-                    <Card.Text>{quiz.description}</Card.Text>
-                    <Button variant="primary">Iniciar</Button>
-                </Card.Body>
-            </Card>
+                    <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={img} />
+                    <Card.Body>
+                    <Card.Title>{quiz.title}</Card.Title>
+                        <Card.Text>{quiz.description}</Card.Text>
+                        <Button variant="primary">Iniciar</Button>
+                    </Card.Body>
+                    </Card>
                 </div>
             )
          })
