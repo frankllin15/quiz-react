@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+
 import Main from '../Main/Main'
 import { Card, Button } from 'react-bootstrap'
 import img from '../../assets/logo_size_invert.jpg'
+
 
 const baseUrl = 'http://localhost:3001/quiz'
 const initialState = {
@@ -30,7 +33,9 @@ export default class Cards extends Component {
                     <Card.Body>
                     <Card.Title>{quiz.title}</Card.Title>
                         <Card.Text>{quiz.description}</Card.Text>
-                        <Button variant="primary">Iniciar</Button>
+                        <Link to='/question'>
+                            <Button variant="primary">Iniciar</Button>
+                        </Link>
                     </Card.Body>
                     </Card>
                 </div>
