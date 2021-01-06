@@ -1,0 +1,10 @@
+footer.footer {
+    background-color: #FFF;
+    box-shadow:  0 2px 23px 0 rgba(0, 0, 0, 0.1),
+    0 2px 49px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    max-height: 26px;
+    padding-right: 5px;
+    bottom: 0;
+    right: 0;
+}

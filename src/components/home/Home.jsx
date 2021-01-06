@@ -1,8 +1,7 @@
 import React from 'react'
-import Header from '../header/Header'
-import Card from '../template/Card'
+import { Cards } from '../template/Card'
 
 const Home = () => 
-        <Card />
-        
+        <Cards />
+
 export default Home

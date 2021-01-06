@@ -4,9 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Routes from './Routes'
 import Header from './components/header/Header'
-import Card from './components/template/Card'
-import Quiz from './components/quiz/Quiz'
-import Home from './components/home/Home'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes />
+        <Footer />
       </div>
     </BrowserRouter>
   );
