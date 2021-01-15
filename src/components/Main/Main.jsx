@@ -1,11 +1,15 @@
 import './Main.css'
 import React from 'react'
+import Cards from '../Cards/Cards'
 
-export default props =>
+const Main = props =>
     <React.Fragment>
-        <main className="content container-fluid">
-            <div className="p-3 d-inline-flex mt-3">
-                {props.children}
+        <main id="main" className="content container-fluid">
+            <div className="p-3  d-flex flex-wrap mt-3">
+                {/* {props.children} */}
+                <Cards />
             </div>
         </main>
-    </React.Fragment>
+    </React.Fragment> 
+
+export default Main

@@ -1,13 +1,20 @@
 import './App.css';
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+
+import Routes from './Routes'
 import Header from './components/header/Header'
-import Card from './components/template/Card'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <div className="App">
         <Header />
-        <Card />
-    </div>
+        <Routes />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
