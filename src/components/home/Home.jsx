@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cards } from '../template/Card'
+import Cards from '../Cards/Cards'
 
 const Home = () => 
         <Cards />
